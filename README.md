@@ -16,6 +16,9 @@ For example, if you have input word(s) in A2 cell and it is translation from Eng
 ```
 6. Translation result is shown on the cell.
 
+# Screen shot
+![Usage](https://raw.githubusercontent.com/takafreak/gsTranslation/master/Custom%20Functions%20in%20Google%20Sheets%20-%20Translate.png "Usage")
+
 # Service
 * Dejizo REST Web Service API - https://www.est.co.jp/dev/dict/REST (Japanese only)
 
