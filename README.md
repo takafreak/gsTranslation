@@ -1,6 +1,9 @@
 # gsTranslation
 Translation custom function for Google Sheets
 
+# Video
+[![gsTranslate - Custom Functions in Google Sheets](http://img.youtube.com/vi/3Fv2ZkECfL0/0.jpg)](http://www.youtube.com/watch?v=3Fv2ZkECfL0)
+
 # Setup
 1. Open your Google Sheets
 2. Tools > Script Editor
