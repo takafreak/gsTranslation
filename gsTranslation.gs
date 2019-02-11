@@ -18,12 +18,12 @@ function getDejizoGetDicItemLite_(itemID, dicID) {
   var url = 'http://public.dejizo.jp/NetDicV09.asmx/GetDicItemLite?Loc=&Prof=XHTML&Item=' + itemID + '&Dic=' + dicID;
   var root = getRESTfulXMLRootElement_(url);
   var ns = XmlService.getNamespace('http://btonic.est.co.jp/NetDic/NetDicV09');
-  var body = root.getChild('Body', ns);  
+  var body = root.getChild('Body', ns);
   var divNetDicBody = body.getChildren();
   var divContent = divNetDicBody[0].getChildren();
   var divInside = divContent[0].getChildren();
   var divInsideLen = divInside.length;
-  // E to J dictionary result has <div> inside divContent and need to process these.  
+  // E to J dictionary result has <div> inside divContent and need to process these.
   if (divInsideLen == 0) {
     content = divContent[0].getText();
   } else {
@@ -35,7 +35,7 @@ function getDejizoGetDicItemLite_(itemID, dicID) {
       }
     }
   }
-  return content;  
+  return content;
 }
 
 /**
@@ -70,9 +70,9 @@ function searchDejizoSearchDicItemLite_(source, dicID) {
 }
 
 /**
- * Translate word(s) FROM a language TO another language. 
- * 
- * Use ISO 2 letter language code for FROM and TO. example =TRANSLATE("orange","EN","JA").
+ * Lookup dictionary then translate word(s) FROM a language TO another language.
+ *
+ * Use ISO 2 letter language code for FROM and TO. example =DICTIONARY("orange","EN","JA").
  *
  * English to Japanese: Dejizo searchDictItemLite and getDictItemLite.
  *
@@ -85,7 +85,7 @@ function searchDejizoSearchDicItemLite_(source, dicID) {
  * @return [index,string] Translation from web service defined in each language.
  * @customfunction
  */
-function TRANSLATE(source,from,to) {
+function DICTIONARY(source,from,to) {
   var array=[];
   if (source == null) {
     // return null if source is null

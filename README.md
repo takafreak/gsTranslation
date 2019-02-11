@@ -2,7 +2,7 @@
 Translation custom function for Google Sheets
 
 # Video
-[![gsTranslate - Custom Functions in Google Sheets](http://img.youtube.com/vi/3Fv2ZkECfL0/0.jpg)](http://www.youtube.com/watch?v=3Fv2ZkECfL0)
+[![gsTranslate - Custom Functions in Google Sheets](https://img.youtube.com/vi/aRQ-ZaVeWX4/0.jpg)](https://www.youtube.com/watch?v=aRQ-ZaVeWX4)
 
 # Setup
 1. Open your Google Sheets
@@ -11,16 +11,18 @@ Translation custom function for Google Sheets
 4. Back to your Google Sheets
 5. In the cell you want to show translation, add following function.
 ```
-=TRANSLATE(source,from,to)
+=DICTIONARY(source,from,to)
 ```
 For example, if you have input word(s) in A2 cell and it is translation from English (EN) to Japanese (JA), add function as follows.
 ```
-=TRANSLATE(A1,"EN","JA")
+=DICTIONARY(A1,"EN","JA")
 ```
 6. Translation result is shown on the cell.
 
 # Screen shot
-![Usage](https://raw.githubusercontent.com/takafreak/gsTranslation/master/Custom%20Functions%20in%20Google%20Sheets%20-%20Translate.png "Usage")
+<div align="center">
+  <img src="assets/gsTraslate.png" />
+</div>
 
 # Service
 * Dejizo REST Web Service API - https://www.est.co.jp/dev/dict/REST (Japanese only)
