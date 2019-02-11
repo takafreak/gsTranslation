@@ -21,7 +21,7 @@ For example, if you have input word(s) in A2 cell and it is translation from Eng
 
 # Screen shot
 <div align="center">
-  <img src="assets/gsTraslation.png" />
+  <img src="assets/gsTranslation.png" />
 </div>
 
 # Service
